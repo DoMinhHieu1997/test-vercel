@@ -14,15 +14,15 @@ router.get("/suggestions", async (req, res) => {
   //   console.error(error);
   //   return res.status(500).send("Server error");
   // }
-  const randomProducts = await ProductCtrl.getRandomProducts(req.body.id);
-  alert(randomProducts);
-  // try {
-  //   const randomProducts = await ProductCtrl.getRandomProducts(req.body.id);
-  //   res.json(randomProducts);
-  // } catch (err) {
-  //   console.log(err);
-  //   res.json(responseMessage("error",1,''));
-  // }
+  // const randomProducts = await ProductCtrl.getRandomProducts(req.body.id);
+  // alert(randomProducts);
+  try {
+    const randomProducts = await ProductCtrl.getRandomProducts(req.body.id);
+    res.json(randomProducts);
+  } catch (err) {
+    console.log(err);
+    res.json(responseMessage("error",1,''));
+  }
 });
 
 module.exports = router;
