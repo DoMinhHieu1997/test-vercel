@@ -1,0 +1,24 @@
+{
+  "name": "test-vercel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoMinhHieu1997/test-vercel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoMinhHieu1997/test-vercel/issues"
+  },
+  "homepage": "https://github.com/DoMinhHieu1997/test-vercel#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
