@@ -16,13 +16,13 @@ router.get("/suggestions", async (req, res) => {
   // }
   // const randomProducts = await ProductCtrl.getRandomProducts(req.body.id);
   // alert(randomProducts);
-  // try {
+  try {
     const randomProducts = await ProductCtrl.getRandomProducts(req.body.id);
     res.json(randomProducts);
-  // } catch (err) {
-  //   console.log(err);
-  //   res.json(responseMessage("error",1,''));
-  // }
+  } catch (err) {
+    console.log(err);
+    res.json(responseMessage("error",1,''));
+  }
 });
 
 module.exports = router;
